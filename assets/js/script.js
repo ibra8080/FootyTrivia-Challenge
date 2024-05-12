@@ -30,10 +30,13 @@ function getQuestions() {
             submitButton.onclick = function() {
 
                 let theRightAnswer = questionsObject[currentIndex].right_answer;
-                console.log(theRightAnswer);
+                
 
                 // Increase Index
                 currentIndex++;
+
+                // Check answer 
+                checkAnswer(theRightAnswer, questionCount);
 
             };
         }
@@ -114,4 +117,20 @@ function addData(obj, count) {
 
     }
 
+}
+
+function checkAnswer(rAnswer, count) {
+
+    let answers = document.getElementsByName('question');
+    let theChoosenAnswer;
+
+    for(let i = 0; i < answers.length; i++) {
+
+        if (answers[i].checked) {
+
+            theChoosenAnswer = answers[i].dataset.answer;
+        }
+    }
+console.log(`Right Answer is : ${rAnswer}`);
+console.log(`Choosen Answer is : ${theChoosenAnswer}`);
 }
