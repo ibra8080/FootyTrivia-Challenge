@@ -52,7 +52,6 @@ function getQuestions() {
 
             };
         }
-
     }
 
 
@@ -150,11 +149,11 @@ function checkAnswer(rAnswer, count) {
 }
 function handelBullets() {
 
-    let bulletsSpans = document.querySelector('.bullets .spans .span');
+    let bulletsSpans = document.querySelector('.bullets .spans span');
     let arrayOfSpans = Array.from(bulletsSpans);
     arrayOfSpans.forEach((span, index) => {
         if(currentIndex === index) {
-            span.className = 'on';
+            span.className = "on";
         }
 
     })
