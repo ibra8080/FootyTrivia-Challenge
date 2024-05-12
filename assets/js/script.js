@@ -9,6 +9,9 @@ let submitButton = document.querySelector('.submit-button');
 
 // Set Options 
 let currentIndex = 0;
+let rightAnswers = 0;
+
+
 
 function getQuestions() {
 
@@ -37,6 +40,12 @@ function getQuestions() {
 
                 // Check answer 
                 checkAnswer(theRightAnswer, questionCount);
+
+                // Change Question
+                quizArea.innerHTML = '';
+                answersArea.innerHTML = '';
+                    // Add new question
+                    addData(questionsObject[currentIndex], questionCount);
 
             };
         }
@@ -131,6 +140,8 @@ function checkAnswer(rAnswer, count) {
             theChoosenAnswer = answers[i].dataset.answer;
         }
     }
-console.log(`Right Answer is : ${rAnswer}`);
-console.log(`Choosen Answer is : ${theChoosenAnswer}`);
+
+    if (rAnswer === theChoosenAnswer) {
+        rightAnswers++;
+    }
 }

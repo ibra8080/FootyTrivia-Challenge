@@ -4,7 +4,15 @@
         "answer_1": "Barcelona",
         "answer_2": "Borussia Dortmund",
         "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
+        "answer_4": "Man-United",
+        "right_answer": "Bayern Munich"
+    },
+    {
+        "title": "Who won the Champions League in 2002",
+        "answer_1": "Barcelona",
+        "answer_2": "Borussia Dortmund",
+        "answer_3": "Bayern Munich",
+        "answer_4": "Man-United",
         "right_answer": "Bayern Munich"
     },
     {
@@ -12,15 +20,7 @@
         "answer_1": "Barcelona",
         "answer_2": "Borussia Dortmund",
         "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich"
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
+        "answer_4": "Man-United",
         "right_answer": "Bayern Munich"
     },
     {
@@ -28,7 +28,7 @@
         "answer_1": "Barcelona",
         "answer_2": "Borussia Dortmund",
         "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
+        "answer_4": "Man-United",
         "right_answer": "Bayern Munich"
     }
     
