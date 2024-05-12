@@ -63,4 +63,21 @@ function addData(obj, count) {
     questionTitle.appendChild(questionText);
     quizArea.appendChild(questionTitle); 
 
+    // Creat the Answer options
+
+    for (let i = 1; i <= 4; i++ ) {
+
+        let mainDiv = document.createElement('div');
+        mainDiv.className = 'answer';
+
+        // Radio input
+
+        let radioInput = document.createElement('input');
+        radioInput.name = 'question';
+        radioInput.type = 'radio';
+        radioInput.id = `answer_${i}`;
+        radioInput.dataset.answer = obj[`answer_${i}`];
+
+    }
+
 }
