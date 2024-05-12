@@ -13,54 +13,22 @@
 </head>
 
 <body>
-    <!-- Quiz Box  -->
-    <div class="quiz_box">
-
-        <!-- Quiz Header -->
-        <header>
-            <div class="title">FootyTrivia Challenge</div>
-            <div class="timer">
-                <div class="time_left">Time Left </div>
-                <div class="timer_sec">15</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-
-        <!-- Quiz erea -->
-        <section>
-            <div class="question_text">
-                <!-- Insert by JS -->
-            </div>
-
-            <div class="options">
-                <!-- Insert by JS -->
-            </div>
-        </section>
-
-        <!-- Quiz footer -->
-        <footer>
-            <div class="total_questions">
-                <!-- Insert by JS -->
-            </div>
-            <button class="next_que">Next</button>
-        </footer>
-
-
-        <div class="result_box">
-            <div class="icon">
-                <i class="fas fa-crown"></i>
-            </div>
-            <div class="complete_text">You've completed the Quiz!</div>
-            <div class="score_text">
-                <!-- insert the Score Result from JS -->
-            </div>
-            <div class="buttons">
-                <button class="restart">Replay Quiz</button>
-                <button class="quit">Quit Quiz</button>
-            </div>
+    <div class="quiz-app">
+        <div class="quiz-info">
+            <div class="category">Category: <span>HTML</span></div>
+            <div class="count">Questions Count: <span></span></div>
+        
         </div>
-
-
+        <div class="quiz-area"></div>
+        <div class="answers-area"></div>
+        <button class="submit-button">Submit Answer</button>
+        <div class="bullets">
+            <div class="spans"></div>
+            <div class="countdown"></div>
+        </div>
+        <div class="results"></div>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
