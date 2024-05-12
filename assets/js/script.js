@@ -46,6 +46,9 @@ function getQuestions() {
                 answersArea.innerHTML = '';
                     // Add new question
                     addData(questionsObject[currentIndex], questionCount);
+                
+                // Handel Bullets
+                handelBullets();
 
             };
         }
@@ -144,4 +147,16 @@ function checkAnswer(rAnswer, count) {
     if (rAnswer === theChoosenAnswer) {
         rightAnswers++;
     }
+}
+function handelBullets() {
+
+    let bulletsSpans = document.querySelector('.bullets .spans .span');
+    let arrayOfSpans = Array.from(bulletsSpans);
+    arrayOfSpans.forEach((span, index) => {
+        if(currentIndex === index) {
+            span.className = 'on';
+        }
+
+    })
+
 }
