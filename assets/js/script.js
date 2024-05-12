@@ -80,7 +80,11 @@ function addData(obj, count) {
         radioInput.dataset.answer = obj[`answer_${i}`];
 
 
-        // make 
+        // Make First Option checked 
+
+        if (i === 1) {
+            radioInput.checked = true;
+        }
 
         // Creat Label
         let theLabel = document.createElement('label');
