@@ -2,7 +2,8 @@
 let countSpan = document.querySelector(".quiz-info .count span");
 let bulletsSpanContainer = document.querySelector('.bullets .spans');
 let quizArea = document.querySelector('.quiz-area');
-let answersArea = document.querySelector('.answers-area')
+let answersArea = document.querySelector('.answers-area');
+let submitButton = document.querySelector('.submit-button');
 
 
 
@@ -24,6 +25,17 @@ function getQuestions() {
 
             // Add Data
             addData(questionsObject[currentIndex], questionCount);
+            
+            // Click on submit Button
+            submitButton.onclick = function() {
+
+                let theRightAnswer = questionsObject[currentIndex].right_answer;
+                console.log(theRightAnswer);
+
+                // Increase Index
+                currentIndex++;
+
+            };
         }
 
     }
@@ -83,7 +95,7 @@ function addData(obj, count) {
         // Make First Option checked 
 
         if (i === 1) {
-            radioInput.checked = true;
+            radioInput.checked = true; 
         }
 
         // Creat Label
