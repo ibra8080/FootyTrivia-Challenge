@@ -31,6 +31,12 @@ function createBullets(num) {
     for (let i = 0; i < num; i++) {
         // Creat Bullets
         let theBullet = document.createElement('span');
+
+        if (i === 0) {
+
+            theBullet.className = 'on';
+
+        }
         
         // Append Bullets to Container 
         bulletsSpanContainer.appendChild(theBullet)
