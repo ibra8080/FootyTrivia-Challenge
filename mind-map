@@ -1,17 +1,19 @@
 Done:
-Creat the file of quistion
+
+    Creat the file of quistion
+    Creat wire frame for the game 
+    start HTML code 
+    Add dummy data 
+    Creat basic styling
+    Show quistion count 
 
 In progress:
-Creat wire frame for the game 
-start HTML code 
-Add dummy data 
-Creat basic styling
-Show quistion count 
-Set the number of right and wrongs answers
-Creat cont down timer
-If the time end mark the question wrong 
-Fetch the questions from the file 
-Show first question
-Check answer 
-Show the next question
-Show the result after finishing the questions
+
+    Set the number of right and wrongs answers
+    Creat cont down timer
+    If the time end mark the question wrong 
+    Fetch the questions from the file 
+    Show first question
+    Check answer 
+    Show the next question
+    Show the result after finishing the questions

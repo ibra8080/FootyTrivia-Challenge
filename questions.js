@@ -168,5 +168,16 @@ let questions = [
             "Brazil"
         ]
     },
+    {
+        numb: 4,
+        question: "Which country 34 won the first-ever FIFA World Cup in 1930?",
+        answer: "Uruguay",
+        options: [
+            "Brazil",
+            "Uruguay",
+            "Argentina",
+            "Italy"
+        ]
+    }
 
 ]
