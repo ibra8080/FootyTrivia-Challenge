@@ -2,6 +2,7 @@
 let countSpan = document.querySelector(".quiz-info .count span");
 let bulletsSpanContainer = document.querySelector('.bullets .spans');
 let quizArea = document.querySelector('.quiz-area');
+let answersArea = document.querySelector('.answers-area')
 
 
 
@@ -77,6 +78,23 @@ function addData(obj, count) {
         radioInput.type = 'radio';
         radioInput.id = `answer_${i}`;
         radioInput.dataset.answer = obj[`answer_${i}`];
+
+
+        // make 
+
+        // Creat Label
+        let theLabel = document.createElement('label');
+        theLabel.htmlFor = `answer_${i}`;
+
+        let theLabelText = document.createTextNode(obj[`answer_${i}`]);
+        theLabel.appendChild(theLabelText);
+
+        mainDiv.appendChild(radioInput);
+        mainDiv.appendChild(theLabel);
+
+        answersArea.appendChild(mainDiv);
+
+
 
     }
 
