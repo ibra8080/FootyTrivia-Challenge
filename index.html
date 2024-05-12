@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,53 +11,56 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <title>FootyTrivia Challenge</title>
 </head>
+
 <body>
-    <div class="quiz-container">
-        <div class="quiz-info">
-            <div class="count">Questions Count: <span>10</span></div>
+    <!-- Quiz Box  -->
+    <div class="quiz_box">
+
+        <!-- Quiz Header -->
+        <header>
+            <div class="title">FootyTrivia Challenge</div>
+            <div class="timer">
+                <div class="time_left">Time Left </div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+
+        <!-- Quiz erea -->
+        <section>
+            <div class="question_text">
+                <!-- Insert by JS -->
+            </div>
+
+            <div class="options">
+                <!-- Insert by JS -->
+            </div>
+        </section>
+
+        <!-- Quiz footer -->
+        <footer>
+            <div class="total_questions">
+                <!-- Insert by JS -->
+            </div>
+            <button class="next_que">Next</button>
+        </footer>
+
+
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+                <!-- insert the Score Result from JS -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
         </div>
-        <div class="question-erea">
-            <h2>Who won the Champions League in 2013 </h2>
-        </div>
-        <div class="answer-erea">
-            <div class="answer">
-                <input type="radio" id="answer_1" name="questions">
-                <label for="answer_1">Barcelona</label>
-            </div>
-            <div class="answer">
-                <input type="radio" id="answer_2" name="questions">
-                <label for="answer_1">Borussia Dortmund</label>
-            </div>
-            <div class="answer">
-                <input type="radio" id="answer_3" name="questions">
-                <label for="answer_1">Bayern Munich</label>
-            </div>
-            <div class="answer">
-                <input type="radio" id="answer_4" name="questions">
-                <label for="answer_1">Man-United</label>
-            </div>
-        </div>
-        <button class="submit-btn">Submit Answer</button>
-        <div class="bullets">
-            <div class="span">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="countdown">
-                <span class="minutees">01</span> : 
-                <span class="seconds">30</span>
-            </div>
-        </div>
-        <div class="result"></div>
-    </div>
-    
+
+
 </body>
+
 </html>

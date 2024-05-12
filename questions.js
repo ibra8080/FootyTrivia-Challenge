@@ -7,7 +7,7 @@ let questions = [
             "Barcelona",
             "Borussia Dortmund",
             "Bayern Munich",
-            "ManUnited",
+            "ManUnited"
         ]
     },
     {
@@ -18,7 +18,7 @@ let questions = [
             "Brazil",
             "Uruguay",
             "Argentina",
-            "Italy",
+            "Italy"
         ]
     },
     {
@@ -29,7 +29,7 @@ let questions = [
             "Alan Shearer",
             "Cristiano Ronaldo",
             "Thierry Henry",
-            "Sergio Agüero",
+            "Sergio Agüero"
         ]
     },
     {
@@ -40,7 +40,7 @@ let questions = [
             "Johan Cruyff",
             "Cristiano Ronaldo",
             "Michel Platini",
-            "Lionel Messi",
+            "Lionel Messi"
         ]
     },
     {
@@ -51,7 +51,7 @@ let questions = [
             "Barcelona",
             "Borussia Dortmund",
             "Bayern Munich",
-            "Man-United",
+            "Man-United"
         ]
     },
     {
@@ -61,7 +61,7 @@ let questions = [
         options: ["Ronaldo (Brazil)",
             "Just Fontaine",
             "Pelé",
-            "Miroslav Klose",
+            "Miroslav Klose"
         ]
     },
     {
@@ -71,7 +71,7 @@ let questions = [
         options: ["Barcelona",
             "Real Madrid",
             "Bayern Munich",
-            "AC Milan",
+            "AC Milan"
         ]
     },
     {
@@ -81,7 +81,7 @@ let questions = [
         options: ["Cristiano Ronaldo",
             "Lionel Messi",
             "Clarence Seedorf",
-            "Andrés Iniesta",
+            "Andrés Iniesta"
         ]
     },
     {
@@ -91,7 +91,7 @@ let questions = [
         options: ["The Blues",
             "The Seleção",
             "The Albiceleste",
-            "The Azzurri",
+            "The Azzurri"
         ]
     },
     {
@@ -101,7 +101,7 @@ let questions = [
         options: ["Cristiano Ronaldo",
             "Ryan Giggs",
             "Xavi Hernandez",
-            "Iker Casillas",
+            "Iker Casillas"
         ]
     },
     {
@@ -111,7 +111,7 @@ let questions = [
         options: ["Germany",
             "Spain",
             "Portugal",
-            "France",
+            "France"
         ]
     },
     {
@@ -122,7 +122,7 @@ let questions = [
             "Camp Nou",
             "Santiago Bernabéu",
             "Old Trafford",
-            "Anfield",
+            "Anfield"
         ]
     },
     {
@@ -133,7 +133,7 @@ let questions = [
             "Franz Beckenbauer",
             "Johan Cruyff",
             "Zinedine Zidane",
-            "Diego Maradona",
+            "Diego Maradona"
         ]
     },
     {
@@ -144,7 +144,7 @@ let questions = [
             "Lionel Messi",
             "Robert Lewandowski",
             "Cristiano Ronaldo",
-            "Erling Haaland",
+            "Erling Haaland"
         ]
     },
     {
@@ -155,7 +155,7 @@ let questions = [
             "Germany",
             "Spain",
             "Italy",
-            "Netherlands",
+            "Netherlands"
         ]
     },
     {
@@ -165,7 +165,7 @@ let questions = [
         options: ["United States",
             "Germany",
             "France",
-            "Brazil",
+            "Brazil"
         ]
     },
 

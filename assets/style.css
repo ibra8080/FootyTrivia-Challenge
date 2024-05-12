@@ -1,22 +1,13 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: "Raleway", sans-serif;
 }
-.quiz-container {
-    margin: 20px auto;
-    width: 800px;
-    max-width: 80%;
-    background-color: #f8f8f8;
-    padding: 15px;
-}
-.quiz-container .quiz-info {
-    display: flex;
-    background-color: aliceblue;
-    padding: 20px;
-}
-
-.quiz-container .answer {
-    padding: 15px;
+.quiz_box {
+    width: 550px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
 }
