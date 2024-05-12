@@ -5,7 +5,7 @@
         "answer_2": "Borussia Dortmund",
         "answer_3": "Bayern Munich",
         "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
+        "right_answer": "Bayern Munich"
     },
     {
         "title": "Who won the Champions League in 2013",
@@ -13,7 +13,7 @@
         "answer_2": "Borussia Dortmund",
         "answer_3": "Bayern Munich",
         "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
+        "right_answer": "Bayern Munich"
     },
     {
         "title": "Who won the Champions League in 2013",
@@ -21,108 +21,7 @@
         "answer_2": "Borussia Dortmund",
         "answer_3": "Bayern Munich",
         "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-	@@ -40,92 +40,92 @@
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-    {
-        "title": "Who won the Champions League in 2013",
-        "answer_1": "Barcelona",
-        "answer_2": "Borussia Dortmund",
-        "answer_3": "Bayern Munich",
-        "answer_3": "Man-United",
-        "right_answer": "Bayern Munich",
-    },
-
+        "right_answer": "Bayern Munich"
+    }
+    
 ]
