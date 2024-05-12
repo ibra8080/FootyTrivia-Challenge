@@ -1,6 +1,9 @@
 // Select Elements
 let countSpan = document.querySelector(".quiz-info .count span");
 let bulletsSpanContainer = document.querySelector('.bullets .spans');
+let quizArea = document.querySelector('.quiz-area');
+
+
 
 // Set Options 
 let currentIndex = 0;
@@ -53,6 +56,11 @@ function createBullets(num) {
 
 function addData(obj, count) {
 
-    console.log(obj);
-    console.log(count);
+    // Creat Question tilte 
+    let questionTitle = document.createElement('h2');
+    
+    let questionText = document.createTextNode(obj['title']);
+    questionTitle.appendChild(questionText);
+    quizArea.appendChild(questionTitle); 
+
 }
