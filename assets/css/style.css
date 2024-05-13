@@ -2,11 +2,11 @@
     box-sizing: border-box;
   }
   body {
-    font-family: "Ralway", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   .quiz-app {
     margin: 20px auto;
-    width: 800px;
+    width: 500px;
     background-color: #f8f8f8;
     padding: 15px;
   }
@@ -50,6 +50,6 @@
     border-radius: 50%;
   }
   .quiz-app .bullets .spans span.on {
-    background-color: #0075ff;
+    background-color: #138935;
   }
   
