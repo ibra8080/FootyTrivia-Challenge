@@ -82,6 +82,7 @@ function createBullets(num) {
 }
 
 function addData(obj, count) {
+    if (currentIndex < count) {
 
     // Creat Question tilte 
     let questionTitle = document.createElement('h2');
@@ -123,11 +124,8 @@ function addData(obj, count) {
         mainDiv.appendChild(theLabel);
 
         answersArea.appendChild(mainDiv);
-
-
-
     }
-
+}
 }
 
 function checkAnswer(rAnswer, count) {
