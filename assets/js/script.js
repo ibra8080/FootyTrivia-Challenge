@@ -18,12 +18,13 @@ function getQues() {
 
     let myRequest = new XMLHttpRequest();
 
-    myRequest.onreadystatechange = function () {
+    myRequest.onreadystatechange = function requestQues () {
 
         if (this.readyState === 4 && this.status === 200) {
             let questionsObject = JSON.parse(this.responseText);
             let questionCount = questionsObject.length;
 
+            
             // creatBullets + set Questions Count 
             createBullets(questionCount);
 
@@ -34,7 +35,6 @@ function getQues() {
             subButton.onclick = function() {
 
                 let theRightAnswer = questionsObject[currentIndex].right_answer;
-                
 
                 // Increase Index
                 currentIndex++;
