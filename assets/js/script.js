@@ -12,57 +12,68 @@ let countSpan = document.querySelector(".quiz-info .count span");
 let currentIndex = 0;
 let rightAnswers = 0;
 
+// Function to handle the response when questions are loaded
+function handleQuestionsResponse() {
+    if (this.readyState === 4 && this.status === 200) {
+        let questionsObject = JSON.parse(this.responseText);
+        let questionCount = questionsObject.length;
 
-
-function getQues() {
-
-    let myRequest = new XMLHttpRequest();
-
-    myRequest.onreadystatechange = function requestQues () {
-
-        if (this.readyState === 4 && this.status === 200) {
-            let questionsObject = JSON.parse(this.responseText);
-            let questionCount = questionsObject.length;
-
-            
-            // creatBullets + set Questions Count 
-            createBullets(questionCount);
-
-            // Add Data
-            addData(questionsObject[currentIndex], questionCount);
-            
-            // Click on submit Button
-            subButton.onclick = function() {
-
-                let theRightAnswer = questionsObject[currentIndex].right_answer;
-
-                // Increase Index
-                currentIndex++;
-
-                // Check answer 
-                checkAnswer(theRightAnswer, questionCount);
-
-                // Change Question
-                quizBox.innerHTML = '';
-                answersDiv.innerHTML = '';
-                    // Add new question
-                    addData(questionsObject[currentIndex], questionCount);
-                
-                // Handel Bullets
-                handleBullets();
-
-                // Show Results
-                showResults(questionCount);
-
-            };
-        }
+        createQuizInterface(questionsObject, questionCount);
     }
+}
 
+// Function to create the quiz interface
+function createQuizInterface(questionsObject, questionCount) {
+    createBullets(questionCount);
+    addData(questionsObject[currentIndex], questionCount);
+    setupSubmitButton(questionsObject, questionCount);
+}
 
+// Function to setup the submit button
+function setupSubmitButton(questionsObject, questionCount) {
+    subButton.onclick = function() {
+        handleAnswerSubmission(questionsObject, questionCount);
+    };
+}
+
+// Function to handle the submission of an answer
+function handleAnswerSubmission(questionsObject, questionCount) {
+    let theRightAnswer = questionsObject[currentIndex].right_answer;
+    currentIndex++;
+    checkAnswer(theRightAnswer, questionCount);
+    changeQuestion(questionsObject, questionCount);
+    handleBullets();
+    showResults(questionCount);
+}
+
+// Function to change the current question
+function changeQuestion(questionsObject, questionCount) {
+    quizBox.innerHTML = '';
+    answersDiv.innerHTML = '';
+    addData(questionsObject[currentIndex], questionCount);
+}
+
+// Function to handle bullets indicating the current question
+function handleBullets() {
+
+}
+
+// Function to display quiz results
+function showResults(questionCount) {
+    
+}
+
+// Create XMLHttpRequest and initiate the request to get questions
+function getQues() {
+    let myRequest = new XMLHttpRequest();
+    myRequest.onreadystatechange = handleQuestionsResponse;
     myRequest.open('GET', 'assets/js/questions.js', true);
     myRequest.send();
 }
+
 getQues();
+
+
 
 function createBullets(num) {
     countSpan.innerHTML = num;
