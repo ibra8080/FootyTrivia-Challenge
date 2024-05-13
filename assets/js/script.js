@@ -3,8 +3,8 @@ let quizBox = document.getElementById('quiz-main');
 let answersDiv = document.getElementById('answers-div');
 let subButton = document.getElementById('sub-button');
 let resultsBox = document.querySelector('.results');
-let bulletsContainer = document.querySelector('.bullets .spans');
-let bullets = document.querySelector('.bullets');
+let bulletsContainer = document.getElementById('bullets-span');
+let bullets = document.getElementById('bullets-container');
 let countSpan = document.querySelector(".quiz-info .count span");
 
 
@@ -12,54 +12,55 @@ let countSpan = document.querySelector(".quiz-info .count span");
 let currentIndex = 0;
 let rightAnswers = 0;
 
+
 // Function to handle the response when questions are loaded
 function handleQuestionsResponse() {
     if (this.readyState === 4 && this.status === 200) {
-        let questionsObject = JSON.parse(this.responseText);
-        let questionCount = questionsObject.length;
+        let quesObject = JSON.parse(this.responseText);
+        let quesCount = quesObject.length;
 
-        createQuizInterface(questionsObject, questionCount);
+        createQuizInterface(quesObject, quesCount);
     }
 }
 
 // Function to create the quiz interface
-function createQuizInterface(questionsObject, questionCount) {
-    createBullets(questionCount);
-    addData(questionsObject[currentIndex], questionCount);
-    setupSubmitButton(questionsObject, questionCount);
+function createQuizInterface(quesObject, quesCount) {
+    getBullets(quesCount);
+    addData(quesObject[currentIndex], quesCount);
+    setupSubmitButton(quesObject, quesCount);
 }
 
 // Function to setup the submit button
-function setupSubmitButton(questionsObject, questionCount) {
+function setupSubmitButton(quesObject, quesCount) {
     subButton.onclick = function() {
-        handleAnswerSubmission(questionsObject, questionCount);
+        handleAnswerSub(quesObject, quesCount);
     };
 }
 
 // Function to handle the submission of an answer
-function handleAnswerSubmission(questionsObject, questionCount) {
-    let theRightAnswer = questionsObject[currentIndex].right_answer;
+function handleAnswerSub(quesObject, quesCount) {
+    let theRightAnswer = quesObject[currentIndex].right_answer;
     currentIndex++;
-    checkAnswer(theRightAnswer, questionCount);
-    changeQuestion(questionsObject, questionCount);
-    handleBullets();
-    showResults(questionCount);
+    check(theRightAnswer, quesCount);
+    runQues(quesObject, quesCount);
+    changeBullets();
+    showResults(quesCount);
 }
 
 // Function to change the current question
-function changeQuestion(questionsObject, questionCount) {
+function runQues(quesObject, quesCount) {
     quizBox.innerHTML = '';
     answersDiv.innerHTML = '';
-    addData(questionsObject[currentIndex], questionCount);
+    addData(quesObject[currentIndex], quesCount);
 }
 
 // Function to handle bullets indicating the current question
-function handleBullets() {
+function changeBullets() {
 
 }
 
 // Function to display quiz results
-function showResults(questionCount) {
+function showResults(quesCount) {
     
 }
 
@@ -75,7 +76,7 @@ getQues();
 
 
 
-function createBullets(num) {
+function getBullets(num) {
     countSpan.innerHTML = num;
 
     // Creat spans 
@@ -142,7 +143,7 @@ function addData(obj, count) {
 }
 }
 
-function checkAnswer(rAnswer, count) {
+function check(right, count) {
 
     let answers = document.getElementsByName('question');
     let theChoosenAnswer;
@@ -155,11 +156,11 @@ function checkAnswer(rAnswer, count) {
         }
     }
 
-    if (rAnswer === theChoosenAnswer) {
+    if (right === theChoosenAnswer) {
         rightAnswers++;
     }
 }
-function handleBullets() {
+function changeBullets() {
     let bulletsSpans = document.querySelectorAll('.bullets .spans span');
     let arrayOfSpans = Array.from(bulletsSpans);
     arrayOfSpans.forEach((span, index) => {

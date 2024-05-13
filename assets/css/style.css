@@ -37,19 +37,19 @@
     display: flex;
     padding: 20px;
   }
-  .quiz-app .bullets .spans {
+  #bullets-span {
     flex: 1;
     display: flex;
   }
   
-  .quiz-app .bullets .spans span {
+  #bullets-span span {
     width: 20px;
     height: 20px;
     background-color: #ddd;
     margin-right: 5px;
     border-radius: 50%;
   }
-  .quiz-app .bullets .spans span.on {
+  #bullets-span span.on {
     background-color: #138935;
   }
   
