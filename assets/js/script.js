@@ -48,7 +48,7 @@ function getQuestions() {
                     addData(questionsObject[currentIndex], questionCount);
                 
                 // Handel Bullets
-                handelBullets();
+                handleBullets();
 
             };
         }
@@ -147,15 +147,12 @@ function checkAnswer(rAnswer, count) {
         rightAnswers++;
     }
 }
-function handelBullets() {
-
-    let bulletsSpans = document.querySelector('.bullets .spans span');
+function handleBullets() {
+    let bulletsSpans = document.querySelectorAll('.bullets .spans span');
     let arrayOfSpans = Array.from(bulletsSpans);
     arrayOfSpans.forEach((span, index) => {
-        if(currentIndex === index) {
-            span.className = "on";
-        }
-
-    })
-
-}
+      if (currentIndex === index) {
+        span.className = "on";
+      }
+    });
+  }
