@@ -23,11 +23,11 @@
     text-align: right;
   }
   
-  .quiz-app .answers-area .answer {
+  .quiz-app .answers-box .answer {
     background-color: #f9f9f9;
     padding: 15px;
   }
-  .quiz-app .answers-area .answer:not(:last-child) {
+  .quiz-app .answers-box .answer:not(:last-child) {
     border-bottom: 1px solid #dfdfdf;
   }
   

@@ -1,12 +1,11 @@
 // Select Elements
-let countSpan = document.querySelector(".quiz-info .count span");
-let bulletsSpanContainer = document.querySelector('.bullets .spans');
-let quizArea = document.querySelector('.quiz-area');
-let answersArea = document.querySelector('.answers-area');
-let submitButton = document.querySelector('.submit-button');
+let quizBox = document.getElementById('quiz-main');
+let answersDiv = document.getElementById('answers-div');
+let subButton = document.getElementById('sub-button');
+let resultsBox = document.querySelector('.results');
+let bulletsContainer = document.querySelector('.bullets .spans');
 let bullets = document.querySelector('.bullets');
-let resultsContainer = document.querySelector('.results');
-
+let countSpan = document.querySelector(".quiz-info .count span");
 
 
 // Set Options 
@@ -15,7 +14,7 @@ let rightAnswers = 0;
 
 
 
-function getQuestions() {
+function getQues() {
 
     let myRequest = new XMLHttpRequest();
 
@@ -32,7 +31,7 @@ function getQuestions() {
             addData(questionsObject[currentIndex], questionCount);
             
             // Click on submit Button
-            submitButton.onclick = function() {
+            subButton.onclick = function() {
 
                 let theRightAnswer = questionsObject[currentIndex].right_answer;
                 
@@ -44,8 +43,8 @@ function getQuestions() {
                 checkAnswer(theRightAnswer, questionCount);
 
                 // Change Question
-                quizArea.innerHTML = '';
-                answersArea.innerHTML = '';
+                quizBox.innerHTML = '';
+                answersDiv.innerHTML = '';
                     // Add new question
                     addData(questionsObject[currentIndex], questionCount);
                 
@@ -60,10 +59,10 @@ function getQuestions() {
     }
 
 
-    myRequest.open('GET', 'assets/questions.json', true);
+    myRequest.open('GET', 'assets/js/questions.js', true);
     myRequest.send();
 }
-getQuestions();
+getQues();
 
 function createBullets(num) {
     countSpan.innerHTML = num;
@@ -80,7 +79,7 @@ function createBullets(num) {
         }
         
         // Append Bullets to Container 
-        bulletsSpanContainer.appendChild(theBullet)
+        bulletsContainer.appendChild(theBullet)
 
 
     }
@@ -94,7 +93,7 @@ function addData(obj, count) {
     
     let questionText = document.createTextNode(obj['title']);
     questionTitle.appendChild(questionText);
-    quizArea.appendChild(questionTitle); 
+    quizBox.appendChild(questionTitle); 
 
     // Creat the Answer options
 
@@ -127,7 +126,7 @@ function addData(obj, count) {
 
         mainDiv.appendChild(radioInput);
         mainDiv.appendChild(theLabel);
-        answersArea.appendChild(mainDiv);
+        answersDiv.appendChild(mainDiv);
     }
 }
 }
@@ -162,9 +161,9 @@ function handleBullets() {
   function showResults (count) {
     let theResult;
     if (currentIndex === count) {
-       quizArea.remove();
-       answersArea.remove();
-       submitButton.remove();
+       quizBox.remove();
+       answersDiv.remove();
+       subButton.remove();
        bullets.remove();
         
        if (rightAnswers > count / 2 ) {
@@ -172,7 +171,7 @@ function handleBullets() {
        } else {
         theResult = `<span class="pass">Your information is not enough</span>, ${rightAnswers} from ${count} try again`;
        }
-       resultsContainer.innerHTML = theResult;
+       resultsBox.innerHTML = theResult;
     }
 
   }
