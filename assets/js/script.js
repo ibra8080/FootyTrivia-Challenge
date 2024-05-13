@@ -4,7 +4,8 @@ let bulletsSpanContainer = document.querySelector('.bullets .spans');
 let quizArea = document.querySelector('.quiz-area');
 let answersArea = document.querySelector('.answers-area');
 let submitButton = document.querySelector('.submit-button');
-
+let bullets = document.querySelector('.bullets');
+let resultsContainer = document.querySelector('.results')
 
 
 // Set Options 
@@ -49,6 +50,9 @@ function getQuestions() {
                 
                 // Handel Bullets
                 handleBullets();
+
+                // Show Results
+                showResults(questionCount);
 
             };
         }
@@ -122,7 +126,6 @@ function addData(obj, count) {
 
         mainDiv.appendChild(radioInput);
         mainDiv.appendChild(theLabel);
-
         answersArea.appendChild(mainDiv);
     }
 }
@@ -153,4 +156,16 @@ function handleBullets() {
         span.className = "on";
       }
     });
+  }
+
+  function showResults (count) {
+    let theResult;
+    if (currentIndex === count) {
+       quizArea.remove();
+       answersArea.remove();
+       submitButton.remove();
+       bullets.remove();
+        
+    }
+
   }
