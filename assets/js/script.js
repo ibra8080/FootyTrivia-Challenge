@@ -5,7 +5,8 @@ let quizArea = document.querySelector('.quiz-area');
 let answersArea = document.querySelector('.answers-area');
 let submitButton = document.querySelector('.submit-button');
 let bullets = document.querySelector('.bullets');
-let resultsContainer = document.querySelector('.results')
+let resultsContainer = document.querySelector('.results');
+
 
 
 // Set Options 
@@ -166,6 +167,12 @@ function handleBullets() {
        submitButton.remove();
        bullets.remove();
         
+       if (rightAnswers > count / 2 ) {
+        theResult = `<span class="pass">You have succeeded</span>, ${rightAnswers} from ${count} Congratulations`;
+       } else {
+        theResult = `<span class="pass">Your information is not enough</span>, ${rightAnswers} from ${count} try again`;
+       }
+       resultsContainer.innerHTML = theResult;
     }
 
   }
