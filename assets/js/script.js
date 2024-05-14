@@ -185,12 +185,14 @@ function showResults(count) {
 
         if (rightAnswers > count / 2) {
             theResult = `<span class="score"> ${rightAnswers} / ${count} <br>
-            <p>Congratulations</p>
+            <p>Congratulations</p><br>
+            <i class="fa fa-trophy" aria-hidden="true"></i>
             </span>, 
             <span class="result-text-s">You have succeeded</span>`;
         } else {
             theResult = `<span class="score"> ${rightAnswers} / ${count} <br>
-            <p>Try again</p>
+            <p>Try again</p><br>
+            <i class="fa fa-minus-circle" aria-hidden="true"></i>
             </span>, 
             <span class="result-text-f">Your information is not enough</span>`;
         }

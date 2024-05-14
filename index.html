@@ -8,29 +8,35 @@
     <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>FootyTrivia Challenge</title>
 </head>
 
 <body>
     <header>
         <div class="logo-div"><img src="assets/images/7588196.png" alt="footy-Trivia-logo" id="logo-icon"></div>
-        <div class="logo-text"><h1>FootyTrivia</h1></div>
+        <div class="logo-text">
+            <h1>FootyTrivia</h1>
+        </div>
     </header>
     <div class="quiz-app">
         <div class="quiz-data">
             <div class="count" id="count-box">Questions Count: <span></span></div>
-        
+
         </div>
-        <div  id="quiz-main"></div>
+        <div id="quiz-main"></div>
         <div class="answers-box" id="answers-div"></div>
-        <button  id="sub-button">Submit Answer</button>
+        <button id="sub-button">Submit Answer</button>
         <div class="bullets" id="bullets-container">
             <div class="spans" id="bullets-span"></div>
         </div>
         <div class="results"></div>
     </div>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
 

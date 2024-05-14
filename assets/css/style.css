@@ -7,6 +7,7 @@
   }
   h2 {
     font-size: 1.3rem;
+    font-weight: 300;
     color: #2d2d2d;
   }
   #logo-icon {
@@ -72,6 +73,7 @@
     background-color: #138935;
     color: #e4f6df;
     font-size: 1.1rem;
+    font-weight: 300;
     height: 50px;
     width: 100%;
     border: 0;
@@ -115,8 +117,25 @@
   }
   .score p {
     font-size: 1rem;
-    color: #138935;
+    color:#2d2d2d;
   }
-.result-text-f {
-  color: red;
-}
+  .result-text-f {
+    color: red;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  .result-text-s {
+    color:#138935;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .fa-trophy {
+    color: #138935;
+    font-size: 200%;
+
+  }
+  .fa-minus-circle {
+    color: red;
+    font-size: 200%;
+  }
