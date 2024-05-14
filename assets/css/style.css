@@ -3,17 +3,28 @@
   }
   body {
     font-family: "Raleway", sans-serif;
+    
   }
   #logo-icon {
     width: 100px;
   }
   header {
+    margin: auto;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
   }
+
+  .logo-div .logo-typo {
+    padding: 10px;
+    gap: 10px;
+  }
+
   .quiz-app {
     margin: 20px auto;
-    width: 500px;
+    width: 700px;
+    max-width: 80%;
     background-color: #f8f8f8;
     padding: 15px;
   }
