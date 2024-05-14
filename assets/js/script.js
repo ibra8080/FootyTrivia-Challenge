@@ -36,7 +36,7 @@ function createQuizInterface(quesObject, quesCount) {
 
 // Function to setup the submit button
 function setupSubmitButton(quesObject, quesCount) {
-    subButton.onclick = function() {
+    subButton.onclick = function () {
         handleAnswerSub(quesObject, quesCount);
     };
 }
@@ -65,7 +65,7 @@ function changeBullets() {
 
 // Function to display quiz results
 function showResults(quesCount) {
-    
+
 }
 
 // Create XMLHttpRequest and initiate the request to get questions
@@ -93,7 +93,7 @@ function getBullets(num) {
             theBullet.className = 'on';
 
         }
-        
+
         // Append Bullets to Container 
         bulletsContainer.appendChild(theBullet)
 
@@ -104,47 +104,47 @@ function getBullets(num) {
 function addData(obj, count) {
     if (currentIndex < count) {
 
-    // Creat Question tilte 
-    let questionTitle = document.createElement('h2');
-    
-    let questionText = document.createTextNode(obj['title']);
-    questionTitle.appendChild(questionText);
-    quizBox.appendChild(questionTitle); 
+        // Creat Question tilte 
+        let questionTitle = document.createElement('h2');
 
-    // Creat the Answer options
+        let questionText = document.createTextNode(obj['title']);
+        questionTitle.appendChild(questionText);
+        quizBox.appendChild(questionTitle);
 
-    for (let i = 1; i <= 4; i++ ) {
+        // Creat the Answer options
 
-        let mainDiv = document.createElement('div');
-        mainDiv.className = 'answer';
+        for (let i = 1; i <= 4; i++) {
 
-        // Radio input
+            let mainDiv = document.createElement('div');
+            mainDiv.className = 'answer';
 
-        let radioInput = document.createElement('input');
-        radioInput.name = 'question';
-        radioInput.type = 'radio';
-        radioInput.id = `answer_${i}`;
-        radioInput.dataset.answer = obj[`answer_${i}`];
+            // Radio input
+
+            let radioInput = document.createElement('input');
+            radioInput.name = 'question';
+            radioInput.type = 'radio';
+            radioInput.id = `answer_${i}`;
+            radioInput.dataset.answer = obj[`answer_${i}`];
 
 
-        // Make First Option checked 
+            // Make First Option checked 
 
-        if (i === 1) {
-            radioInput.checked = true; 
+            if (i === 1) {
+                radioInput.checked = true;
+            }
+
+            // Creat Label
+            let theLabel = document.createElement('label');
+            theLabel.htmlFor = `answer_${i}`;
+
+            let theLabelText = document.createTextNode(obj[`answer_${i}`]);
+            theLabel.appendChild(theLabelText);
+
+            mainDiv.appendChild(radioInput);
+            mainDiv.appendChild(theLabel);
+            answersDiv.appendChild(mainDiv);
         }
-
-        // Creat Label
-        let theLabel = document.createElement('label');
-        theLabel.htmlFor = `answer_${i}`;
-
-        let theLabelText = document.createTextNode(obj[`answer_${i}`]);
-        theLabel.appendChild(theLabelText);
-
-        mainDiv.appendChild(radioInput);
-        mainDiv.appendChild(theLabel);
-        answersDiv.appendChild(mainDiv);
     }
-}
 }
 
 function check(right, count) {
@@ -152,7 +152,7 @@ function check(right, count) {
     let answers = document.getElementsByName('question');
     let theChoosenAnswer;
 
-    for(let i = 0; i < answers.length; i++) {
+    for (let i = 0; i < answers.length; i++) {
 
         if (answers[i].checked) {
 
@@ -168,27 +168,27 @@ function changeBullets() {
     let bulletsSpans = document.querySelectorAll('.bullets .spans span');
     let arrayOfSpans = Array.from(bulletsSpans);
     arrayOfSpans.forEach((span, index) => {
-      if (currentIndex === index) {
-        span.className = "on";
-      }
+        if (currentIndex === index) {
+            span.className = "on";
+        }
     });
-  }
+}
 
-  function showResults (count) {
+function showResults(count) {
     let theResult;
     if (currentIndex === count) {
-       quizBox.remove();
-       answersDiv.remove();
-       subButton.remove();
-       bullets.remove();
-       countBox.remove();
-        
-       if (rightAnswers > count / 2 ) {
-        theResult = `<span class="pass">You have succeeded</span>, ${rightAnswers} from ${count} Congratulations`;
-       } else {
-        theResult = `<span class="pass">Your information is not enough</span>, ${rightAnswers} from ${count} try again`;
-       }
-       resultsBox.innerHTML = theResult;
+        quizBox.remove();
+        answersDiv.remove();
+        subButton.remove();
+        bullets.remove();
+        countBox.remove();
+
+        if (rightAnswers > count / 2) {
+            theResult = `<span class="score"> ${rightAnswers} / ${count} <br>Congratulations</span>, <span class="result-text">You have succeeded</span>`;
+        } else {
+            theResult = `<span class="score"> ${rightAnswers} / ${count} <br>try again</span>, <span class="result-text">Your information is not enough</span>`;
+        }
+        resultsBox.innerHTML = theResult;
     }
 
-  }
+}

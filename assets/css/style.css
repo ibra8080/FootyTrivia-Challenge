@@ -102,4 +102,11 @@
   #bullets-span span.on {
     background-color: #138935;
   }
-  
+  .results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .results span {
+    text-align: center;
+  }
