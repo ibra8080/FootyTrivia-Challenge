@@ -43,6 +43,9 @@
     border-radius: 5px;
     color: #2d2d2d;
   }
+  #quiz-main{
+    min-height: 100px;
+  }
   .quiz-app .quiz-info {
     display: flex;
     background-color: #fff;

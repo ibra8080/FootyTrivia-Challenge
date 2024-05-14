@@ -6,6 +6,7 @@ let resultsBox = document.querySelector('.results');
 let bulletsContainer = document.getElementById('bullets-span');
 let bullets = document.getElementById('bullets-container');
 let countSpan = document.querySelector(".quiz-data .count span");
+let countBox = document.getElementById('count-box')
 
 
 // Set Options 
@@ -180,6 +181,7 @@ function changeBullets() {
        answersDiv.remove();
        subButton.remove();
        bullets.remove();
+       countBox.remove();
         
        if (rightAnswers > count / 2 ) {
         theResult = `<span class="pass">You have succeeded</span>, ${rightAnswers} from ${count} Congratulations`;
