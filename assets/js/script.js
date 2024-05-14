@@ -184,9 +184,15 @@ function showResults(count) {
         countBox.remove();
 
         if (rightAnswers > count / 2) {
-            theResult = `<span class="score"> ${rightAnswers} / ${count} <br>Congratulations</span>, <span class="result-text">You have succeeded</span>`;
+            theResult = `<span class="score"> ${rightAnswers} / ${count} <br>
+            <p>Congratulations</p>
+            </span>, 
+            <span class="result-text-s">You have succeeded</span>`;
         } else {
-            theResult = `<span class="score"> ${rightAnswers} / ${count} <br>try again</span>, <span class="result-text">Your information is not enough</span>`;
+            theResult = `<span class="score"> ${rightAnswers} / ${count} <br>
+            <p>Try again</p>
+            </span>, 
+            <span class="result-text-f">Your information is not enough</span>`;
         }
         resultsBox.innerHTML = theResult;
     }

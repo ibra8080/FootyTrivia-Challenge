@@ -110,3 +110,13 @@
   .results span {
     text-align: center;
   }
+  .score {
+    font-size: 1.5rem;
+  }
+  .score p {
+    font-size: 1rem;
+    color: #138935;
+  }
+.result-text-f {
+  color: red;
+}
