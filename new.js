@@ -14,17 +14,17 @@ let rightAnswers = 0;
 
 
 
-
-
 // Function to handle the response when questions are loaded
-function handleQuestionsResponse() {
-    if (this.readyState === 4 && this.status === 200) {
-        let quesObject = JSON.parse(this.responseText);
-        let quesCount = quesObject.length;
 
-        createQuizInterface(quesObject, quesCount);
-    }
+function handleQuestionsResponse() {
+    // Access the questionsData array directly
+    let quesObject = questionsData;
+    let quesCount = quesObject.length;
+
 }
+
+
+
 
 // Function to create the quiz interface
 function createQuizInterface(quesObject, quesCount) {
@@ -67,15 +67,7 @@ function showResults(quesCount) {
     
 }
 
-// Create XMLHttpRequest and initiate the request to get questions
-function getQues() {
-    let myRequest = new XMLHttpRequest();
-    myRequest.onreadystatechange = handleQuestionsResponse;
-    myRequest.open('GET', 'assets/js/questions.js', true);
-    myRequest.send();
-}
-
-getQues();
+handleQuestionsResponse();
 
 
 
