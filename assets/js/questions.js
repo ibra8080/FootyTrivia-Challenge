@@ -1,6 +1,6 @@
 [
     {
-        "title": "Which country won the first-ever FIFA World Cup in jjjj 1930?",
+        "title": "Which country won the first-ever FIFA World Cup in 1930?",
         "answer_1": "Uruguay",
         "answer_2": "Brazil",
         "answer_3": "Argentina",

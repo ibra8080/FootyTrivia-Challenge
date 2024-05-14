@@ -5,7 +5,7 @@ let subButton = document.getElementById('sub-button');
 let resultsBox = document.querySelector('.results');
 let bulletsContainer = document.getElementById('bullets-span');
 let bullets = document.getElementById('bullets-container');
-let countSpan = document.querySelector(".quiz-info .count span");
+let countSpan = document.querySelector(".quiz-data .count span");
 
 
 // Set Options 
