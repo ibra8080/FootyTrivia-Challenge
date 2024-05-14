@@ -5,6 +5,10 @@
     font-family: "Raleway", sans-serif;
     
   }
+  h2 {
+    font-size: 1.3rem;
+    color: #2d2d2d;
+  }
   #logo-icon {
     width: 80px;
     margin-top: 20px;
@@ -16,7 +20,10 @@
     flex-wrap: wrap;
     padding: 20px;
   }
-  
+  .count{
+    font-size: 0.8rem;
+    color: #2d2d2d;
+  }
   .logo-typo h1 {
     font-size: 300%;
     text-align: center;
@@ -34,6 +41,7 @@
     background-color: #e4f6df;
     padding: 15px;
     border-radius: 5px;
+    color: #2d2d2d;
   }
   .quiz-app .quiz-info {
     display: flex;
@@ -51,20 +59,34 @@
   .quiz-app .answers-box .answer {
     background-color: #f9f9f9;
     padding: 15px;
+    border-radius: 5px;
   }
   .quiz-app .answers-box .answer:not(:last-child) {
     border-bottom: 1px solid #dfdfdf;
   }
+
+  #sub-button {
+    background-color: #138935;
+    color: #e4f6df;
+    font-size: 1.1rem;
+    height: 50px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   
   .quiz-app .bullets {
-    border-top: 1px solid #dfdfdf;
     background-color: #fff;
     display: flex;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 5px;
   }
   #bullets-span {
     flex: 1;
     display: flex;
+    justify-content: center;
   }
   
   #bullets-span span {
