@@ -186,10 +186,10 @@ function showResults(count) {
             <span class="result-text-s">You have succeeded</span>`;
         } else {
             theResult = `<span class="score"> ${rightAnswers} / ${count} <br>
+            <i class="fa fa-minus-circle" aria-hidden="true"></i><br>
+            <span class="result-text-f">Your information is not enough</span>
             <button id="try-again" onClick="window.location.reload()">Try again</button><br>
-            <i class="fa fa-minus-circle" aria-hidden="true"></i>
-            </span>, 
-            <span class="result-text-f">Your information is not enough</span>`;
+            </span>,`;
             
             
         }
