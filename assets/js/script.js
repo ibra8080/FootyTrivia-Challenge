@@ -3,18 +3,15 @@ let quizBox = document.getElementById('quiz-main');
 let answersDiv = document.getElementById('answers-div');
 let subButton = document.getElementById('sub-button');
 let resultsBox = document.querySelector('.results');
-let bulletsContainer = document.getElementById('bullets-span');
-let bullets = document.getElementById('bullets-container');
-let countSpan = document.querySelector(".quiz-data .count span");
+let indicatorContainer = document.getElementById('bullets-span');
+let indicator = document.getElementById('indicator-container');
+let countSpan = document.getElementById("counter");
 let countBox = document.getElementById('count-box')
 
 
-// Set Options 
+// Set Conditions 
 let currentIndex = 0;
 let rightAnswers = 0;
-
-
-
 
 
 // Function to handle the response when questions are loaded
@@ -63,7 +60,7 @@ function changeBullets() {
 
 }
 
-// Function to display quiz results
+// Function to display results
 function showResults(quesCount) {
 
 }
@@ -80,24 +77,21 @@ getQues();
 
 
 
-function getBullets(num) {
-    countSpan.innerHTML = num;
+function getBullets(x) {
+    countSpan.innerHTML = x;
 
-    // Creat spans 
-    for (let i = 0; i < num; i++) {
-        // Creat Bullets
+    // Creat indicator spans 
+    for (let i = 0; i < x; i++) {
+        
         let theBullet = document.createElement('span');
 
         if (i === 0) {
 
             theBullet.className = 'on';
-
         }
 
-        // Append Bullets to Container 
-        bulletsContainer.appendChild(theBullet)
-
-
+        // Append indicator to Container 
+        indicatorContainer.appendChild(theBullet)
     }
 }
 
@@ -180,7 +174,7 @@ function showResults(count) {
         quizBox.remove();
         answersDiv.remove();
         subButton.remove();
-        bullets.remove();
+        indicator.remove();
         countBox.remove();
 
         if (rightAnswers > count / 2) {

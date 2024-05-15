@@ -52,11 +52,11 @@
     background-color: #fff;
     padding: 20px;
   }
-  .quiz-app .quiz-info .category {
-    flex: 1;
-  }
-  .quiz-app .quiz-info .count {
-    flex: 1;
+  
+  #count-box {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
     text-align: right;
   }
   
@@ -95,11 +95,9 @@
   }
   
   #bullets-span span {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 7px;
     background-color: #ddd;
-    margin-right: 5px;
-    border-radius: 50%;
   }
   #bullets-span span.on {
     background-color: #138935;
@@ -138,4 +136,12 @@
   .fa-minus-circle {
     color: red;
     font-size: 200%;
+  }
+
+  @media only screen and (min-width: 600px) {
+    #answers-div {
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: #138935;
+    }
   }

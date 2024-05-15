@@ -3,7 +3,7 @@ let quizBox = document.getElementById('quiz-main');
 let answersDiv = document.getElementById('answers-div');
 let subButton = document.getElementById('sub-button');
 let resultsBox = document.querySelector('.results');
-let bulletsContainer = document.getElementById('bullets-span');
+let indicatorContainer = document.getElementById('bullets-span');
 let bullets = document.getElementById('bullets-container');
 let countSpan = document.querySelector(".quiz-info .count span");
 
@@ -79,11 +79,11 @@ getQues();
 
 
 
-function getBullets(num) {
-    countSpan.innerHTML = num;
+function getBullets(x) {
+    countSpan.innerHTML = x;
 
     // Creat spans 
-    for (let i = 0; i < num; i++) {
+    for (let i = 0; i < x; i++) {
         // Creat Bullets
         let theBullet = document.createElement('span');
 
@@ -94,7 +94,7 @@ function getBullets(num) {
         }
         
         // Append Bullets to Container 
-        bulletsContainer.appendChild(theBullet)
+        indicatorContainer.appendChild(theBullet)
 
 
     }
