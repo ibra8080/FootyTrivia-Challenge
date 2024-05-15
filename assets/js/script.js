@@ -7,6 +7,7 @@ let indicatorContainer = document.getElementById('bullets-span');
 let indicator = document.getElementById('indicator-container');
 let countSpan = document.getElementById("counter");
 let countBox = document.getElementById('count-box')
+let tryAgainB = document.getElementById('again')
 
 
 // Set Conditions 
@@ -185,12 +186,14 @@ function showResults(count) {
             <span class="result-text-s">You have succeeded</span>`;
         } else {
             theResult = `<span class="score"> ${rightAnswers} / ${count} <br>
-            <p>Try again</p><br>
+            <button id="again" onclick="tryAgain()">Try again</button><br>
             <i class="fa fa-minus-circle" aria-hidden="true"></i>
             </span>, 
             <span class="result-text-f">Your information is not enough</span>`;
+            
+            
         }
         resultsBox.innerHTML = theResult;
+        
     }
-
 }
