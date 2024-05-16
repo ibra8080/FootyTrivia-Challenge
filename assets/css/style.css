@@ -118,11 +118,12 @@ header {
 .results {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .results span {
   text-align: center;
+  margin: 10px 0;
 }
 
 .score {
@@ -130,7 +131,7 @@ header {
 }
 
 .score p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #2d2d2d;
 }
 
@@ -138,6 +139,7 @@ header {
   color: red;
   font-weight: 500;
   font-size: 1.3rem;
+  
 }
 
 .result-text-s {
@@ -149,12 +151,14 @@ header {
 .fa-trophy {
   color: #138935;
   font-size: 200%;
+  margin-top: 30px;
 
 }
 
 .fa-minus-circle {
   color: red;
   font-size: 200%;
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 600px) {
