@@ -4,69 +4,14 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/ibra8080/FootyTrivia-Challenge)](https://github.com/ibra8080/FootyTrivia-Challenge/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ibra8080/FootyTrivia-Challenge)](https://github.com/ibra8080/FootyTrivia-Challenge)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
 
-!! IMPORTANT !! RE: Table of Contents
+FootyTrivia is an engaging and educational quiz game designed to test and expand users' knowledge of football (soccer). The game features a variety of questions about football clubs, players, historical matches, achievements, and other interesting trivia. FootyTrivia aims to provide an entertaining way for football enthusiasts to challenge themselves and learn more about the sport they love.
 
-DO NOT add a Table of Contents to your README or TESTING!!
-These are outdated since 2021 when GitHub added them built-in to Markdown files automatically.
-
-Assessors see this as bad practice since it's outdated for a few years now,
-as if you've taken it from someone else's project that did the same thing.
-
----
-
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
-
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://ibra8080.github.io/FootyTrivia-Challenge
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
----
-
-GitHub now supports CALLOUTS in Markdown files.
-There are some callouts already embedded in this application for you.
-However, if you feel that you want to add more, there are certain ones you can use.
-
-NOTE: the preview for callouts isn't yet supported in Gitpod/Codeanywhere/VSCode/etc.
-You'll have to commit/push the changes to GitHub to see it in action.
-
-> [!NOTE]  
-> BLUE: Highlights information that users should take into account, even when skimming.
-
-> [!TIP]  
-> GREEN: Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> PURPLE: Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> YELLOW: Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]  
-> RED: Negative potential consequences of an action.
-
-Source: https://github.com/orgs/community/discussions/16925
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+# Objectives
+- Educate: Provide users with interesting and informative trivia about football.
+- Entertain: Create an enjoyable and challenging game experience.
+- Engage: Foster a sense of community and competition among football fans.
+- Inspire: Encourage users to delve deeper into football history and facts.
 
 ![screenshot](documentation/mockup.png)
 
@@ -74,24 +19,15 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://ibra8080.github
 
 ## UX
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### Colour Scheme
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
 
-Explain your colours and the colour scheme.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
+- `#138935` used for primary items (logo, Buttons).
+- `#2d2d2d` used for text.
+- `#e4f6df` used for background.
+- `#ececec` used for secondary background .
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
 
