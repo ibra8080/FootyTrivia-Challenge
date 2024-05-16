@@ -3,12 +3,8 @@ Done:
     Creat the file of quistion
     Creat wire frame for the game 
     start HTML code 
-    Add dummy data 
     Creat basic styling
     Show quistion count 
-
-In progress:
-
     Set the xber of right and wrongs answers
     Creat cont down timer
     If the time end mark the question wrong 
@@ -17,3 +13,6 @@ In progress:
     Check answer 
     Show the next question
     Show the result after finishing the questions
+    Creat finishing styling
+
+
