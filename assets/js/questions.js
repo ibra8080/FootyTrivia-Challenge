@@ -1,8 +1,8 @@
 [
     {
         "title": "Which country won the first-ever FIFA World Cup in 1930?",
-        "answer_1": "Uruguay",
-        "answer_2": "Brazil",
+        "answer_1": "Brazil",
+        "answer_2": "Uruguay",
         "answer_3": "Argentina",
         "answer_4": "Italy",
         "right_answer": "Uruguay"
@@ -24,12 +24,12 @@
         "right_answer": "Just Fontaine"
     },
     {
-        "title": "Which club has won the most UEFA Champions League titles?",
-        "answer_1": "FC Barcelona",
+        "title": "Which team was the first to win six titles in one year?",
+        "answer_1": "AC Milan",
         "answer_2": "Real Madrid",
-        "answer_3": "AC Milan",
+        "answer_3": "FC Barcelona",
         "answer_4": "Bayern Munich",
-        "right_answer": "Real Madrid"
+        "right_answer": "FC Barcelona"
     },
     {
         "title": "Who is the only player to have won the UEFA Champions League with three different clubs?",
