@@ -11,7 +11,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-|  | index.html | ![screenshot](documentation/validation/W3validation.png) | |
+|  | index.html | ![screenshot](documentation/validation/Cssvalidation.png) | |
 
 ### CSS
 
@@ -19,7 +19,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| assets | style.css | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| assets | style.css | ![screenshot](documentation/validation/Cssvalidation.png) | |
 
 ### JavaScript
 
@@ -27,8 +27,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| assets | questions.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| assets | script.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| assets | questions.js | ![screenshot](documentation/validation/quesVal.png) | |
+| assets | script.js | ![screenshot](documentation/validation/scriptVal.png) | |
 
 ## Browser Compatibility
 

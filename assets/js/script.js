@@ -7,7 +7,6 @@ let indicatorContainer = document.getElementById('bullets-span');
 let indicator = document.getElementById('indicator-container');
 let countSpan = document.getElementById("counter");
 let countBox = document.getElementById('count-box');
-let tryAgainB = document.getElementById('try-again');
 
 
 // Set Conditions 
