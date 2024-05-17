@@ -111,31 +111,19 @@ Result
 
 ![screenshot](documentation/mockup.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### Future Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+- Ability to Choose Question Categories-#1
+    - FootyTrivia will allow users to select specific categories of questions based on their interests. Whether it's focusing on a particular league, team, or era, users will have the flexibility to tailor the quiz to their preferences, enhancing their engagement and enjoyment.
+- Difficulty Level Selection-#2
+    - To cater to both beginners and seasoned football enthusiasts, FootyTrivia will introduce the option to choose the difficulty level of the questions. Users can select from easy, medium, and hard levels, ensuring a personalized and appropriately challenging experience.
+- Leaderboard Integration-#3
+    - FootyTrivia plans to integrate a leaderboard feature, enabling users to compete with friends and other players around the world. This addition will foster a sense of community and competition, encouraging users to improve their scores and knowledge.
+- Social Sharing Options-#4
+    - FootyTrivia will offer social sharing options, enabling users to share their scores and achievements on social media platforms. This feature will encourage friendly competition and increase the game's visibility among potential new players.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#1
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#2
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#3
-    - Any additional notes about this feature.
 
 ## Tools & Technologies Used
 
