@@ -44,92 +44,36 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 
 ## Wireframes
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
-
-⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
-
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 ### Mobile Wireframes
 
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
+<details>
+<summary> Click here to see the Mobile Wireframes </ddd33344esummary>
 
-Home
-  - ![screenshot](documentation/wireframes/mobile-home.png)
+Quiz
+  - ![screenshot](documentation/mobileWairframeMain.png)
 
-About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
+Result
+  - ![screenshot](documentation/mobileWireframeResult.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
+</details>
 
-Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
+### Large screen Wireframes
 
-etc.
-  - repeat for any remaining mobile wireframes
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
 
-< / details >
+Quiz
+  - ![screenshot](documentation/largScreenWireframeMain.png)
 
-### Tablet Wireframes
+Result
+  - ![screenshot](documentation/largScreenWireframeResult.png)
 
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
+</details >
 
-Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
-
-etc.
-  - repeat for any remaining tablet wireframes
-
-< / details >
-
-### Desktop Wireframes
-
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
-
-Home
-  - ![screenshot](documentation/wireframes/desktop-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
-
-etc.
-  - repeat for any remaining desktop wireframes
-
-< / details >
 
 ## Features
 
