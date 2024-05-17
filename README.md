@@ -51,7 +51,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 ### Mobile Wireframes
 
 <details>
-<summary> Click here to see the Mobile Wireframes </ddd33344esummary>
+<summary> Click here to see the Mobile Wireframes </summary>
 
 Quiz
   - ![screenshot](documentation/mobileWairframeMain.png)
@@ -59,12 +59,12 @@ Quiz
 Result
   - ![screenshot](documentation/mobileWireframeResult.png)
 
-</details>
+</details >
 
-### Large screen Wireframes
+### Large screens Wireframes
 
 <details>
-<summary> Click here to see the Tablet Wireframes </summary>
+<summary> Click here to see the Largescreens Wireframes </summary>
 
 Quiz
   - ![screenshot](documentation/largScreenWireframeMain.png)
@@ -77,40 +77,39 @@ Result
 
 ## Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Existing Features
 
-- **YOUR-TITLE-FOR-FEATURE-#1**
+- **Dynamic Question Count Display-#1**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - FootyTrivia includes a dynamic area that displays the total number of questions in the quiz. This feature helps users know how many questions they have to answer, giving them a clear understanding of the quiz's scope.
 
-![screenshot](documentation/features/feature01.png)
+![screenshot](documentation/quesCounter.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#2**
+- **Progress Bar-#2**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - To provide a visual representation of how much of the quiz has been completed, FootyTrivia features a progress bar. As users answer questions, the progress bar updates to reflect their advancement, offering a clear and engaging way to see their journey through the quiz.
 
-![screenshot](documentation/features/feature02.png)
+![screenshot](documentation/progressBar.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#3**
+- **Humorous Result Messages-#3**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - At the end of the quiz, users receive a funny message based on their performance. Whether they win or lose, these messages are designed to add an extra layer of enjoyment and encouragement, along with displaying their final score.
 
-![screenshot](documentation/features/feature03.png)
+![screenshot](documentation/result.png)
+![screenshot](documentation/loseM.png)
+
+- **Try Again Button-#4**
+
+    - For users who don't succeed on their first attempt, FootyTrivia offers a "Try Again" button. This feature allows users to easily reload the quiz and have another go, promoting continuous engagement and learning.
+
+![screenshot](documentation/tryAgainBut.png)
+
+- **Responsive Design-#5**
+
+    - DFootyTrivia is built with a responsive design, ensuring that the game looks and functions beautifully on all screen sizes. Whether users are playing on a desktop, tablet, or smartphone, they will enjoy a seamless and intuitive experience.
+
+
+![screenshot](documentation/mockup.png)
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
 
