@@ -34,7 +34,7 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://ibra8080.github
 
 I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
 
-![screenshot](documentation/Colors.png)
+![screenshot](documentation/colors.png)
 
 ### Typography
 
@@ -46,7 +46,7 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Figma](https://www.figma.com/) to design my site wireframes.
 
 ### Mobile Wireframes
 
@@ -54,10 +54,10 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 <summary> Click here to see the Mobile Wireframes </summary>
 
 Quiz
-  - ![screenshot](documentation/mobileWairframeMain.png)
+  - ![screenshot](documentation/mobile-wairframe-main.png)
 
 Result
-  - ![screenshot](documentation/mobileWireframeResult.png)
+  - ![screenshot](documentation/mobile-wireframe-result.png)
 
 </details >
 
@@ -67,10 +67,10 @@ Result
 <summary> Click here to see the Largescreens Wireframes </summary>
 
 Quiz
-  - ![screenshot](documentation/largScreenWireframeMain.png)
+  - ![screenshot](documentation/largscreen-wireframe-main.png)
 
 Result
-  - ![screenshot](documentation/largScreenWireframeResult.png)
+  - ![screenshot](documentation/largscreen-wireframe-result.png)
 
 </details >
 
@@ -83,26 +83,26 @@ Result
 
     - FootyTrivia includes a dynamic area that displays the total number of questions in the quiz. This feature helps users know how many questions they have to answer, giving them a clear understanding of the quiz's scope.
 
-![screenshot](documentation/quesCounter.png)
+![screenshot](documentation/ques-counter.png)
 
 - **Progress Bar-#2**
 
     - To provide a visual representation of how much of the quiz has been completed, FootyTrivia features a progress bar. As users answer questions, the progress bar updates to reflect their advancement, offering a clear and engaging way to see their journey through the quiz.
 
-![screenshot](documentation/progressBar.png)
+![screenshot](documentation/progress-bar.png)
 
 - **Humorous Result Messages-#3**
 
     - At the end of the quiz, users receive a funny message based on their performance. Whether they win or lose, these messages are designed to add an extra layer of enjoyment and encouragement, along with displaying their final score.
 
 ![screenshot](documentation/result.png)
-![screenshot](documentation/loseM.png)
+![screenshot](documentation/losem.png)
 
 - **Try Again Button-#4**
 
     - For users who don't succeed on their first attempt, FootyTrivia offers a "Try Again" button. This feature allows users to easily reload the quiz and have another go, promoting continuous engagement and learning.
 
-![screenshot](documentation/tryAgainBut.png)
+![screenshot](documentation/tryagain-but.png)
 
 - **Responsive Design-#5**
 
