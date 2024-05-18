@@ -11,7 +11,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-|  | index.html | ![screenshot](documentation/validation/Cssvalidation.png) | |
+|  | index.html | ![screenshot](documentation/validation/html-validation.png) | |
 
 ### CSS
 
@@ -19,7 +19,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| assets | style.css | ![screenshot](documentation/validation/Cssvalidation.png) | |
+| assets | style.css | ![screenshot](documentation/validation/css-validation.png) | |
 
 ### JavaScript
 
@@ -27,8 +27,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| assets | questions.js | ![screenshot](documentation/validation/quesVal.png) | |
-| assets | script.js | ![screenshot](documentation/validation/scriptVal.png) | |
+| assets | questions.js | ![screenshot](documentation/validation/ques-val.png) | |
+| assets | script.js | ![screenshot](documentation/validation/script-val.png) | |
 
 ## Browser Compatibility
 
@@ -50,9 +50,9 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Home | results | Notes |
 | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/testing/resposiveA.png) | ![screenshot](documentation/testing/responsiveB.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/testing/tabR.png) | ![screenshot](documentation/testing/tabH.png) | Works as expected |
-| Desktop | ![screenshot](documentation/testing/deskH.png) | ![screenshot](documentation/testing/deskR.png) | Works as expected |
+| Mobile (DevTools) | ![screenshot](documentation/testing/resposive-a.png) | ![screenshot](documentation/testing/responsive-b.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/testing/tab-r.png) | ![screenshot](documentation/testing/tab-h.png) | Works as expected |
+| Desktop | ![screenshot](documentation/testing/desk-h.png) | ![screenshot](documentation/testing/desk-r.png) | Works as expected |
 
 
 ## Lighthouse Audit
@@ -63,7 +63,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/testing/lightM.png) | ![screenshot](documentation/testing/lightD.png) | Some minor warnings |
+| Home | ![screenshot](documentation/testing/light-m.png) | ![screenshot](documentation/testing/light-d.png) | Some minor warnings |
 
 ## Bugs
 
